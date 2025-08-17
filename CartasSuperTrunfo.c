@@ -21,7 +21,7 @@ int main() {
     float area2;
 
 //Cadastro de carta 1
-    printf("          Desafio Super Trunfo!\n");
+    printf("       Desafio Super Trunfo novato!\n");
     printf("\n----------Cadastro de Carta 1----------\n");
     
     printf("Estado: \n");
