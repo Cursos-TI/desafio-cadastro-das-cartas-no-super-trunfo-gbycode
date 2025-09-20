@@ -35,7 +35,7 @@ int main() {
     scanf("%s", cidade1);
 
     printf("Número de população: \n");
-    scanf("%u", &populacao1);
+    scanf("%lu", &populacao1);
 
     printf("Área: \n");
     scanf("%f", &area1);
@@ -62,7 +62,7 @@ int main() {
     scanf("%s", cidade2);
 
     printf("Populção: \n");
-    scanf("%u", &populacao2);
+    scanf("%lu", &populacao2);
 
     printf("Área km: \n");
     scanf("%f", &area2);
@@ -106,26 +106,32 @@ float PoderB = populacao2
 
     printf("\n----------Comparação de Cartas----------\n");
     
-    if (populacao1 > populacao2);
-    {
-        printf("População: Carta 1 venceu %d\n", populacao1, populacao2);
-    }
-    
-    else{
-        printf("População: Carta 2 venceu %d\n", populacao1, populacao2);
-    }
-    
-    printf("Área: Carta %s venceu %f\n", area1 > area2);
+    printf("População: Carta %s venceu %d\n", 
+        (populacao1 > populacao2) ? "Carta 1" : "Carta 2",
+        (populacao1 > populacao2));
 
-    printf("PIB: Carta %s venceu %f\n", pib1 > pib2);
+    printf("Área: Carta %s venceu %d\n", 
+        (area1 > area2) ? "Carta 1" : "Carta 2",
+        (area1 > area2));
 
-    printf("Pontos Turisticos: Carta %s venceu %d\n", pontosturisticos1 > pontosturisticos2);
+    printf("PIB: Carta %s venceu %d\n", 
+        (pib1 > pib2) ? "Carta 1" : "Carta 2",
+        (pib1 > pib2));
 
-    printf("Densidade Populacional: Carta %s venceu %f\n", densidade1 < densidade2);
+    printf("Pontos Turisticos: Carta %s venceu %d\n", 
+        (pontosturisticos1 > pontosturisticos2) ? "Carta 1" : "Carta 2",
+        (pontosturisticos1 > pontosturisticos2));
 
-    printf("PIB per Capital: Carta %s venceu %f\n", pibPercapital1 > pibPercapital2);
+    printf("Densidade: Carta %s venceu %d\n", 
+        (densidade1 < densidade2) ? "Carta 1" : "Carta 2",
+        (densidade1 < densidade2));
 
-    printf("Super Poder: Carta %s venceu %f\n", PoderA > PoderB);
+    printf("PIB Per Capital: Carta %s venceu %d\n", 
+        (pibPercapital1 > pibPercapital2) ? "Carta 1" : "Carta 2",
+        (pibPercapital1 > pibPercapital2));
 
+    printf("Super Poder: Carta %s venceu %d\n", 
+        (PoderA > PoderB) ? "Carta 1" : "Carta 2",
+        (PoderA > PoderB));
 return 0;
 }
