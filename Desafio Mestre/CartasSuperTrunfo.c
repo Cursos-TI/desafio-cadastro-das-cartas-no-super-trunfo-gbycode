@@ -133,5 +133,6 @@ float PoderB = populacao2
     printf("Super Poder: Carta %s venceu %d\n", 
         (PoderA > PoderB) ? "Carta 1" : "Carta 2",
         (PoderA > PoderB));
+        
 return 0;
 }
