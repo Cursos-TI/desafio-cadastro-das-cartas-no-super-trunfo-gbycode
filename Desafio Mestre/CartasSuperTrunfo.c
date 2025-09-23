@@ -2,7 +2,7 @@
 
 int main() {
 
-    //variavel carta 1
+//variavel carta 1
     char codigo1[10] = "Carta 1";
     unsigned long int populacao1;
     char cidade1[40];
@@ -11,7 +11,7 @@ int main() {
     int pontosturisticos1;
     float area1;
 
-    //variavel carta 2
+//variavel carta 2
     char codigo2[10] = "Carta 2";
     unsigned long int populacao2;
     char cidade2[40];
@@ -20,8 +20,8 @@ int main() {
     int pontosturisticos2;
     float area2;
 
-    //Cadastro de carta 1
-    printf("      Desafio Super Trunfo Aventureiro!\n");
+//Cadastro de carta 1
+    printf("      Desafio Super Trunfo Mestre!\n");
     printf("\n----------Cadastro de Carta 1----------\n");
     
     printf("Estado: \n");
@@ -54,7 +54,7 @@ int main() {
     printf("Estado: \n");
     scanf(" %s", estado2);
 
-    printf("Código de Carta: \n");
+    printf("Código de Carta (ex: A01): \n");
     scanf("%3s", codigo2);
 
     getchar();
